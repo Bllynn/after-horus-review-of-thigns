@@ -4,7 +4,7 @@ import './index.css';
 import router from './router';
 import registerServiceWorker from './registerServiceWorker';
 
-import './App.css'
+import './App.css'//dont forget to import your CSS here.
 
-ReactDOM.render(router, document.getElementById('root'));
+ReactDOM.render(router, document.getElementById('root'));//ROUTER IS IMPORTED HERE AS router .  THIS IS INSTEAD OF WRAPPING APP IN <HASHROUTER>
 registerServiceWorker();

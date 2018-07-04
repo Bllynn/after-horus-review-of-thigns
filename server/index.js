@@ -10,7 +10,7 @@ const app = express();
 
 app.use(bodyParser.json());
 
-massive(process.env.CONNECTION_STRING)
+massive(process.env.CONNECTION_STRING) //this connection string is all set up in the .env file located on root, from heroke DB info (add to git ignore so you dont push your secrets out there!)
 .then(db => {
   app.set('db', db);
   app.listen(port, () => {
@@ -19,7 +19,7 @@ massive(process.env.CONNECTION_STRING)
 })
 .catch(console.log)
 
-app.get('/allFavorites', controller.getAll)
-app.get('/singleFavorite/:id', controller.getOne)
+app.get('/allFavorites', controller.getAll)//app.get wil go to /allFavorites and run the function getAll located on our controller.
+app.get('/singleFavorite/:id', controller.getOne)//this will go to /singleFavorite/:id and run function getOne on the controller file.
 
 

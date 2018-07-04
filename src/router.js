@@ -13,3 +13,5 @@ const router = (
 )
 
 export default router;
+//just do this.  THIS IS YOUR ROUTER!!!!!!! HASHROUTER,ROUTE,SWITCH!!!!! ACCEPT IT!!!!!!
+//todd made this from his App.js, CHECK INDEX.JS TO FIND ROUTER!!!!!!
